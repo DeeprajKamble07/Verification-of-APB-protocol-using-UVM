@@ -1,0 +1,150 @@
+[2026-02-17 07:25:41 UTC] vlib work && vlog '-timescale' '1ns/1ns' +incdir+$RIVIERA_HOME/vlib/uvm-1.2/src -l uvm_1_2 -err VCP2947 W9 -err VCP2974 W9 -err VCP3003 W9 -err VCP5417 W9 -err VCP6120 W9 -err VCP7862 W9 -err VCP2129 W9 design.sv testbench.sv  && vsim -c -do "vsim +access+r; run -all; exit"  
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = ./work/work.lib
+MESSAGE_SP VCP2124 "Package uvm_pkg found in library uvm_1_2."
+WARNING VCP2803 "Function this.item.randomize result is ignored." "sequence.sv" 15  25
+WARNING VCP2803 "Function this.item.randomize result is ignored." "sequence.sv" 36  25
+WARNING VCP2803 "Function this.item.randomize result is ignored." "sequence.sv" 58  25
+WARNING VCP2803 "Function this.item.randomize result is ignored." "sequence.sv" 63  25
+MESSAGE "Unit top modules: tb."
+SUCCESS "Compile success 0 Errors 4 Warnings  Analysis time: 5[s]."
+done
+# Aldec, Inc. Riviera-PRO version 2025.04.139.9738 built for Linux64 on May 30, 2025.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2025 Aldec, Inc. All rights reserved.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 The "uvm_pkg" design unit does not have a time unit/precision defined but other design units do.
+# ELBREAD: Elaboration time 0.7 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 4 (44.44%) other processes in SLP
+# SLP: 27 (0.09%) signals in SLP and 21 (0.07%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 28572 kB (elbread=2098 elab2=21678 kernel=4796 sdf=0)
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test test...
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 10: uvm_test_top.env.scb [SCB] write: addr=e wdata=8bbb9786 arr_write 8bbb9786
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 70: uvm_test_top.env.scb [SCB] write: addr=4 wdata=2e7f697 arr_write 2e7f697
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 130: uvm_test_top.env.scb [SCB] write: addr=11 wdata=f140b4b9 arr_write f140b4b9
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 190: uvm_test_top.env.scb [SCB] write: addr=15 wdata=56c5d1ec arr_write 56c5d1ec
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 250: uvm_test_top.env.scb [SCB] write: addr=f wdata=33774e30 arr_write 33774e30
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 310: uvm_test_top.env.scb [SCB] write: addr=1f wdata=87552985 arr_write 87552985
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 370: uvm_test_top.env.scb [SCB] write: addr=6 wdata=525f63eb arr_write 525f63eb
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 430: uvm_test_top.env.scb [SCB] write: addr=4 wdata=9495fd62 arr_write 9495fd62
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 490: uvm_test_top.env.scb [SCB] write: addr=18 wdata=4df8f5ea arr_write 4df8f5ea
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 550: uvm_test_top.env.scb [SCB] write: addr=2 wdata=7e884d83 arr_write 7e884d83
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 610: uvm_test_top.env.scb [SCB] write: addr=3 wdata=2644042d arr_write 2644042d
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 670: uvm_test_top.env.scb [SCB] write: addr=1b wdata=452c19e8 arr_write 452c19e8
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 730: uvm_test_top.env.scb [SCB] write: addr=9 wdata=db408eb4 arr_write db408eb4
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 790: uvm_test_top.env.scb [SCB] write: addr=d wdata=e8816291 arr_write e8816291
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 850: uvm_test_top.env.scb [SCB] write: addr=8 wdata=6cee957f arr_write 6cee957f
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 910: uvm_test_top.env.scb [SCB] data is not present in 1e addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 970: uvm_test_top.env.scb [SCB] data is not present in 14 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1030: uvm_test_top.env.scb [SCB] data is not present in 1 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1090: uvm_test_top.env.scb [SCB] data is not present in 5 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1150: uvm_test_top.env.scb [SCB] DATA MATCH: addr=1f actual rdata=87552985 expected rdata=87552985
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1210: uvm_test_top.env.scb [SCB] DATA MATCH: addr=f actual rdata=33774e30 expected rdata=33774e30
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1270: uvm_test_top.env.scb [SCB] data is not present in 16 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1330: uvm_test_top.env.scb [SCB] data is not present in 14 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1390: uvm_test_top.env.scb [SCB] DATA MATCH: addr=8 actual rdata=6cee957f expected rdata=6cee957f
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1450: uvm_test_top.env.scb [SCB] data is not present in 12 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1510: uvm_test_top.env.scb [SCB] data is not present in 13 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1570: uvm_test_top.env.scb [SCB] data is not present in b addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1630: uvm_test_top.env.scb [SCB] data is not present in 19 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1690: uvm_test_top.env.scb [SCB] data is not present in 1d addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1750: uvm_test_top.env.scb [SCB] DATA MATCH: addr=18 actual rdata=4df8f5ea expected rdata=4df8f5ea
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 1810: uvm_test_top.env.scb [SCB] write: addr=1c wdata=6bc93927 arr_write 6bc93927
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 1870: uvm_test_top.env.scb [SCB] data is not present in 12 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 1930: uvm_test_top.env.scb [SCB] write: addr=1f wdata=d14e565a arr_write d14e565a
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1990: uvm_test_top.env.scb [SCB] DATA MATCH: addr=3 actual rdata=2644042d expected rdata=2644042d
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2050: uvm_test_top.env.scb [SCB] write: addr=1d wdata=1384efd1 arr_write 1384efd1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2110: uvm_test_top.env.scb [SCB] DATA MATCH: addr=d actual rdata=e8816291 expected rdata=e8816291
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2170: uvm_test_top.env.scb [SCB] write: addr=14 wdata=326d058c arr_write 326d058c
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 2230: uvm_test_top.env.scb [SCB] data is not present in 12 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2290: uvm_test_top.env.scb [SCB] write: addr=6 wdata=2e06978b arr_write 2e06978b
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 2350: uvm_test_top.env.scb [SCB] data is not present in 10 addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2410: uvm_test_top.env.scb [SCB] write: addr=11 wdata=651a5ce arr_write 651a5ce
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2470: uvm_test_top.env.scb [SCB] DATA MATCH: addr=9 actual rdata=db408eb4 expected rdata=db408eb4
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2530: uvm_test_top.env.scb [SCB] write: addr=17 wdata=bb4e3055 arr_write bb4e3055
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2590: uvm_test_top.env.scb [SCB] DATA MATCH: addr=1b actual rdata=452c19e8 expected rdata=452c19e8
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2650: uvm_test_top.env.scb [SCB] write: addr=16 wdata=4cfc3720 arr_write 4cfc3720
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2710: uvm_test_top.env.scb [SCB] DATA MATCH: addr=8 actual rdata=6cee957f expected rdata=6cee957f
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2770: uvm_test_top.env.scb [SCB] write: addr=10 wdata=bb5bba2f arr_write bb5bba2f
+# KERNEL: UVM_ERROR /home/runner/scoreboard.sv(51) @ 2830: uvm_test_top.env.scb [SCB] DATA MISS MATCH: addr=e actual rdata=xxxxxxxx expected rdata=8bbb9786
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2890: uvm_test_top.env.scb [SCB] write: addr=3 wdata=66cb982 arr_write 66cb982
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2950: uvm_test_top.env.scb [SCB] DATA MATCH: addr=f actual rdata=33774e30 expected rdata=33774e30
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 3010: uvm_test_top.env.scb [SCB] write: addr=11 wdata=2e2f3519 arr_write 2e2f3519
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3070: uvm_test_top.env.scb [SCB] DATA MATCH: addr=9 actual rdata=db408eb4 expected rdata=db408eb4
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 3130: uvm_test_top.env.scb [SCB] write: addr=18 wdata=32a32cf4 arr_write 32a32cf4
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 3190: uvm_test_top.env.scb [SCB] data is not present in 1e addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 3250: uvm_test_top.env.scb [SCB] write: addr=1a wdata=13c8a113 arr_write 13c8a113
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(48) @ 3310: uvm_test_top.env.scb [SCB] data is not present in c addr
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 3370: uvm_test_top.env.scb [SCB] write: addr=15 wdata=d19f9176 arr_write d19f9176
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3430: uvm_test_top.env.scb [SCB] DATA MATCH: addr=15 actual rdata=d19f9176 expected rdata=d19f9176
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 3490: uvm_test_top.env.scb [SCB] write: addr=b wdata=6c27fe1d arr_write 6c27fe1d
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3550: uvm_test_top.env.scb [SCB] DATA MATCH: addr=17 actual rdata=bb4e3055 expected rdata=bb4e3055
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_objection.svh(1271) @ 3570: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_report_server.svh(869) @ 3570: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :   62
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    1
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [RNTST]     1
+# KERNEL: [SCB]    60
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# KERNEL: Time: 3570 ns,  Iteration: 57,  Instance: /tb,  Process: @INITIAL#26_2@.
+# KERNEL: stopped at time: 3570 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
+Finding VCD file...
+./dump.vcd
+[2026-02-17 07:25:54 UTC] Opening EPWave...
+Done
